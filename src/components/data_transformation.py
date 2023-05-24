@@ -116,7 +116,7 @@ class DataTransformation:
             dataframe.replace('?', np.NaN, inplace=True)  # replacing '?' with NaN values for imputation
 
             X = dataframe.drop(columns=TARGET_COLUMN)
-            y = np.where(dataframe["Income"] == '<=50K', 0, 1)  # replacing the values of the target column
+            y = np.where(dataframe[TARGET_COLUMN] == '<=50K', 0, 1)  # replacing the values of the target column
 
             sampler = RandomOverSampler()
             x_sampled, y_sampled = sampler.fit_resample(X, y)
