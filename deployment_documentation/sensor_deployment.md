@@ -1,5 +1,5 @@
 
-# Sensor Fault Detection Project Deployment
+# Income Prediction Project Deployment
 
 To deploy our project to Aws Ec2 we have some steps which are following:
 
