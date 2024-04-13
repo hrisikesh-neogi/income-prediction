@@ -15,6 +15,14 @@ conda activate venv/
 ```
 pip install -r requirements.txt
 ```
+3. Set Environment Variables
+ - Set `MONGO_DB_URL` in your environment. 
+
+4. Upload data in mongodb
+ - Go to the `upload_data_to_db` folder 
+ - Change the `MONGO_DB_URL` with your connection string
+ - Run the notebook 
+ 
 5. Run Application
 ```
 python app.py
